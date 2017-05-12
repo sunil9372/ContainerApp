@@ -83,12 +83,12 @@ namespace ContainerApp.Droid
                 handler.Proceed();
             }
 
-            public void onReceivedError(WebView view, int errorCode, String description, String failingUrl)
-            {
-               string sError = "onReceivedError DEPRECATED Error: " + description);
-                //Toast.MakeText(Contex, "Oh no! " + sError, ToastLength.Long).show();
+            //public void onReceivedError(WebView view, int errorCode, String description, String failingUrl)
+            //{
+            //  // string sError = "onReceivedError DEPRECATED Error: " + description);
+            //    //Toast.MakeText(Contex, "Oh no! " + sError, ToastLength.Long).show();
                 
-            }
+            //}
         }
     }
 }
