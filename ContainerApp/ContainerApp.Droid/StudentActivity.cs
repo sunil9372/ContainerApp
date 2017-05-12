@@ -11,6 +11,7 @@ using Android.Views;
 using Android.Widget;
 using ContainerApp.Droid;
 using Android.Webkit;
+using Android.Content.PM;
 
 namespace ContainerApp.Droid
 {
@@ -54,24 +55,33 @@ namespace ContainerApp.Droid
         {
             if (mlist[e.Position].Name == "Inspection App")
             {
-                var geoUri = Android.Net.Uri.Parse("geo:42.374260,-71.120824");
-                var mapIntent = new Intent(Intent.ActionView, geoUri);
-                StartActivity(mapIntent);
+                Intent i;
+                PackageManager manager = PackageManager;
+
+                i = manager.GetLaunchIntentForPackage("com.android.contacts");
+                if (i == null)
+                {
+
+                    throw new PackageManager.NameNotFoundException();
+                }
+                i.AddCategory(Intent.CategoryLauncher);
+                StartActivity(i);
             }
             if (mlist[e.Position].Name == "Mindful")
             {
-                // StartActivity(new Intent(Application.Context, typeof(WebViewPage1)));
+                StartActivity(new Intent(Application.Context, typeof(WebViewUIPage)));
 
-                var uri = Android.Net.Uri.Parse("https://www.mindful.sodexo.com/");
-                var intent = new Intent(Intent.ActionView, uri);
-                StartActivity(intent);
+                //var uri = Android.Net.Uri.Parse("https://www.mindful.sodexo.com/");
+                //var intent = new Intent(Intent.ActionView, uri);
+                //StartActivity(intent);
             }
             if (mlist[e.Position].Name == "In My Kitchen")
             {
-                //StartActivity(new Intent(Application.Context, typeof(WebViewPage2)));
-                var uri = Android.Net.Uri.Parse("http://inmykitchen.sodexo.com/");
-                var intent = new Intent(Intent.ActionView, uri);
-                StartActivity(intent);
+                StartActivity(new Intent(Application.Context, typeof(WebViewUIPage2)));
+
+                //var uri = Android.Net.Uri.Parse("http://inmykitchen.sodexo.com/");
+                //var intent = new Intent(Intent.ActionView, uri);
+                //StartActivity(intent);
             }
         }
     }

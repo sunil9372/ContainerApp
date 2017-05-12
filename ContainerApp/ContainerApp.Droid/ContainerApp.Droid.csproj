@@ -144,6 +144,8 @@
     <Compile Include="Views\ListViews.cs" />
     <Compile Include="WebViewPage1.cs" />
     <Compile Include="WebViewPage2.cs" />
+    <Compile Include="WebViewUIPage.cs" />
+    <Compile Include="WebViewUIPage2.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -160,6 +162,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\WebView1.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\WebView2.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -180,7 +185,7 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\splash.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\splash.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

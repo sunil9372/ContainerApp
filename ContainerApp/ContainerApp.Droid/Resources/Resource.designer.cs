@@ -3628,6 +3628,9 @@ namespace ContainerApp.Droid
 			// aapt resource value: 0x7f030046
 			public const int WebView1 = 2130903110;
 			
+			// aapt resource value: 0x7f030047
+			public const int WebView2 = 2130903111;
+			
 			static Layout()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
