@@ -2,15 +2,20 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/Background">
     <TextView
         android:id="@+id/ItemsTxtName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="25dp"
-        android:textColor="#FFFFFF" />
+        android:textColor="#ff080808"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_margin="5dp" />
     <ListView
         android:id="@+id/myDemoList"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:foregroundTint="#ff180c0c" />
 </LinearLayout>

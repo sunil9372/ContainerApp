@@ -52,7 +52,9 @@ namespace ContainerApp.Droid
         //In the HelloAndroid Activity, add this nested class
         public class HelloWebViewClient : WebViewClient
         {
-            public override bool ShouldOverrideUrlLoading(WebView view, string url)
+			#pragma warning disable CS0672 // Member overrides obsolete member
+			            public override bool ShouldOverrideUrlLoading(WebView view, string url)
+			#pragma warning restore CS0672 // Member overrides obsolete member
             {
                 view.LoadUrl(url);
                 return true;
@@ -64,16 +66,16 @@ namespace ContainerApp.Droid
                 String message = "SSL Certificate error.";
                 switch (error.PrimaryError)
                 {
-                    case SslError.SslUntrusted:
+                    case SslErrorType.Untrusted:
                         message = "The certificate authority is not trusted.";
                         break;
-                    case SslError.SslExpired:
+                    case SslErrorType.Expired:
                         message = "The certificate has expired.";
                         break;
-                    case SslError.SslIdmismatch:
+                    case SslErrorType.Idmismatch:
                         message = "The certificate Hostname mismatch.";
                         break;
-                    case SslError.SslNotyetvalid:
+                    case SslErrorType.Notyetvalid:
                         message = "The certificate is not yet valid.";
                         break;
                 }

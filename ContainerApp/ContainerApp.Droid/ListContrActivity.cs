@@ -65,11 +65,11 @@ namespace ContainerApp.Droid
             }
             if (_demoList[e.Position] == "Mindful")
             {
-                StartActivity(new Intent(Application.Context, typeof(WebViewPage1)));
+                StartActivity(new Intent(Application.Context, typeof(WebViewUIPage)));
             }
             if (_demoList[e.Position] == "In My Kitchen")
             {
-                StartActivity(new Intent(Application.Context, typeof(WebViewPage2)));
+                StartActivity(new Intent(Application.Context, typeof(WebViewUIPage2)));
                 
             }
         }

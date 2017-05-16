@@ -58,7 +58,7 @@ namespace ContainerApp.Droid
                 Intent i;
                 PackageManager manager = PackageManager;
 
-                i = manager.GetLaunchIntentForPackage("com.android.contacts");
+                i = manager.GetLaunchIntentForPackage("com.inspectionApp.inspectionApp");
                 if (i == null)
                 {
 

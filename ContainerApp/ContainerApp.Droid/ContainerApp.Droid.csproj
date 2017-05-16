@@ -14,7 +14,7 @@
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidApplication>True</AndroidApplication>
     <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v7.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
     <AssemblyName>ContainerApp.Droid</AssemblyName>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <NuGetPackageImportStamp>
@@ -128,13 +128,12 @@
   <ItemGroup>
     <ProjectReference Include="..\ContainerApp\ContainerApp.csproj">
       <Name>ContainerApp</Name>
+      <Project>{731EA1D9-F1B2-4F3E-BE10-FAC7CBA74F15}</Project>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ListContrActivity.cs" />
-    <Compile Include="ListViewDemoPage.cs" />
     <Compile Include="Loginactivity.cs" />
-    <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SplashActvt.cs" />
@@ -142,8 +141,6 @@
     <Compile Include="StudentActivity.cs" />
     <Compile Include="StudentAdapter.cs" />
     <Compile Include="Views\ListViews.cs" />
-    <Compile Include="WebViewPage1.cs" />
-    <Compile Include="WebViewPage2.cs" />
     <Compile Include="WebViewUIPage.cs" />
     <Compile Include="WebViewUIPage2.cs" />
   </ItemGroup>
@@ -167,11 +164,9 @@
     <AndroidResource Include="Resources\layout\WebView2.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\drawable-hdpi\Background.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\Main.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
     <AndroidResource Include="Resources\values\Strings.xml" />
     <AndroidResource Include="Resources\drawable-hdpi\Icon.png" />
     <AndroidResource Include="Resources\drawable-mdpi\Icon.png" />
@@ -187,7 +182,7 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-hdpi\splash.jpg" />
   </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>

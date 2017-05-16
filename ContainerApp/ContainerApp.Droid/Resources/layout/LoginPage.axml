@@ -2,15 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <ImageView
-        android:id="@+id/Image1"
-        android:layout_width="283.0dp"
-        android:layout_height="127.0dp"
-        android:padding="5dp"
-        android:src="@drawable/splash"
-        android:layout_marginBottom="51.0dp"
-        android:layout_marginRight="93.5dp" />
+    android:layout_height="match_parent"
+    android:background="@drawable/Background">
     <EditText
         android:id="@+id/userName"
         android:layout_width="fill_parent"
