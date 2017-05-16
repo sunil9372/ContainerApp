@@ -15,7 +15,7 @@ using ContainerApp.Droid;
 
 namespace InspectionApp.Resources.layout
 {
-    [Activity(Label = "Sodexo", MainLauncher = true, Theme = "@style/SplashScreen", NoHistory = true, Icon = "@drawable/icon", LaunchMode = Android.Content.PM.LaunchMode.SingleTop)] //,MainLauncher = true,Theme ="@style/Theme.Splash",NoHistory =true,
+    [Activity(Label = "CONTAINER", MainLauncher = true, Theme = "@style/SplashScreen", NoHistory = true, Icon = "@drawable/icon", LaunchMode = Android.Content.PM.LaunchMode.SingleTop)] //,MainLauncher = true,Theme ="@style/Theme.Splash",NoHistory =true,
     public class SplashActvt : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)

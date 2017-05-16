@@ -140,7 +140,6 @@
     <Compile Include="Student.cs" />
     <Compile Include="StudentActivity.cs" />
     <Compile Include="StudentAdapter.cs" />
-    <Compile Include="Views\ListViews.cs" />
     <Compile Include="WebViewUIPage.cs" />
     <Compile Include="WebViewUIPage2.cs" />
   </ItemGroup>
@@ -165,6 +164,7 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable-hdpi\Background.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\Sodexo.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />

@@ -15,7 +15,7 @@ using Android.Content.PM;
 
 namespace ContainerApp.Droid
 {
-    [Activity(Label = "Applications List")]
+    [Activity(Label = "APPLICATIONS")]
     public class StudentActivity : Activity
     {
         // Referd from

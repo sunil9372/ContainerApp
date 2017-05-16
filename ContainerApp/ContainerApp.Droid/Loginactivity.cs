@@ -13,7 +13,7 @@ using Android.Content.Res;
 
 namespace ContainerApp.Droid
 {
-    [Activity(Label = "Login")]
+    [Activity(Label = "CONTAINER")]
     public class Loginactivity : Activity
     {
         //private Button login = nul;

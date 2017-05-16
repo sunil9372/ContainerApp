@@ -32,12 +32,12 @@ namespace ContainerApp.Droid
             //ListView demoItemslistView = new ListView(this);
             //demoItemslistView.itemt
 
-            demoItemslistView = FindViewById<ListView>(ContainerApp.Droid.Resource.Id.myDemoList);
-            _demoList = new List<string>();
-            _demoList.Add("Inspection App");
-            _demoList.Add("Mindful");
-            _demoList.Add("In My Kitchen");
-             _demoList.Add("Test");
+            //demoItemslistView = FindViewById<ListView>(ContainerApp.Droid.Resource.Id.myDemoList);
+            //_demoList = new List<string>();
+            //_demoList.Add("Inspection App");
+            //_demoList.Add("Mindful");
+            //_demoList.Add("In My Kitchen");
+            //_demoList.Add("Test");
 
             
 
