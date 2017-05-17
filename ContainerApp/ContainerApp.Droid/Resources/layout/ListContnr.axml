@@ -2,19 +2,30 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
-    <TextView
+    android:layout_height="match_parent"
+    android:background="#ffb0b0b0"
+    android:fadingEdge="vertical"
+    android:fadingEdgeLength="300dp"
+    android:layerType="software">
+    <TextView xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/ItemsTxtName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="25dp"
-        android:textColor="#ff080808"
-        android:gravity="center"
+        android:textColor="#ff3d3d3d"
+        android:gravity="center_vertical"
         android:padding="5dp"
-        android:layout_margin="5dp" />
-    <ListView
+        android:layout_margin="5dp"
+        android:backgroundTint="#ffdedede"
+        android:linksClickable="false"
+        tools:visibility="gone"
+        android:textStyle="bold" />
+    <ListView xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/myDemoList"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:foregroundTint="#ff180c0c" />
+        android:foregroundTint="#ff3d3d3d"
+        android:choiceMode="singleChoice"
+        android:layoutMode="opticalBounds"
+        app:backgroundTint="#ffd2d2d2" />
 </LinearLayout>
