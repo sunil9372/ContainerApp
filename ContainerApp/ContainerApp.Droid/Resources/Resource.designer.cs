@@ -4359,6 +4359,9 @@ namespace ContainerApp.Droid
 			// aapt resource value: 0x7f0b000e
 			public const int CardView_Light = 2131427342;
 			
+			// aapt resource value: 0x7f0b018c
+			public const int LoginPage = 2131427724;
+			
 			// aapt resource value: 0x7f0b018a
 			public const int MyTheme = 2131427722;
 			

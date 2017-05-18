@@ -32,7 +32,7 @@ namespace ContainerApp.Droid
             List<Student> objstud = new List<Student>();
             objstud.Add(new Student
             {
-                Name = "Inspection App"
+                Name = "Inspection"
             });
             objstud.Add(new Student
             {
@@ -53,7 +53,7 @@ namespace ContainerApp.Droid
 
         private void StudentlistView_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
         {
-            if (mlist[e.Position].Name == "Inspection App")
+            if (mlist[e.Position].Name == "Inspection")
             {
                 Intent i;
                 PackageManager manager = PackageManager;

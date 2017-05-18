@@ -19,5 +19,10 @@ namespace ContainerApp.Droid
             get;
             set;
         }
+        public string Icon
+        {
+            get;
+            set;
+        }
     }
 }

@@ -13,7 +13,7 @@ using Android.Content.Res;
 
 namespace ContainerApp.Droid
 {
-    [Activity(Label = "CONTAINER")]
+    [Activity(Label = "CONTAINER",Theme = "@style/SplashScreen")]
     public class Loginactivity : Activity
     {
         //private Button login = nul;
